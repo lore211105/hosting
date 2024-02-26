@@ -7,16 +7,27 @@
     <h1>Bienvenido al formulario</h1>
     <h2>Transportista</h2>
     <p>Ingrese el archivo</p>
-    <form method="post" action="index" enctype="multipart/form-data">
-    <label for="patente">Patente</label>
-    <input type="text" id="Patente">
-    <br>
+   
+  <div class="form-content">
+        <h2>Enviar su formulario</h2>
+        <form action="https://formsubmit.co/hrpendientes@cencosud.cl" method="POST" enctype="multipart/form-data" target="_blank">
+            <label for="transport">Transportista</label>
+            <input type="text" name="transport" id="transport">
 
-    <label for="Transportista">Transportista</label>
-    <input type="text" id="Transportista">
-    <br>
-<input type="file" name="archivo"><br>
-<button type="submit">Enviar</button>
-</form>
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email">
+
+            <label for="patent">Patente</label>
+            <input type="text" name="patent" id="patent" maxlength="6">
+
+            <label for="coments">Comentarios</label>
+            <input type="coments" name="coments" id="coments">
+
+            <label for="archiv">Archivo adjunto</label>
+            <input type="file" name="archiv" accept="application/pdf">
+
+            <input type="submit" value="Enviar">            
+
+  </form>
   </body>
 </html>
